@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div class="section-background"></div>
+    <div
+        class="section-info"
+        [class.hovered]="isMouseOver"
+        (mouseover)="onEventDispatcher($event, 3)"
+        (mouseleave)="onEventDispatcher($event, 4)"></div>
+    <div class="section-charts"></div>
+</div>
