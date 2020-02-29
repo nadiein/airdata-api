@@ -1,0 +1,17 @@
+@keyframes background-color {
+    0% {
+        background-color: $orange;
+    }
+    25% {
+        background-color: $green;
+    }
+    50% {
+        background-color: $blue;
+    }
+    75% {
+        background-color: $yellow;
+    }
+    100% {
+        background-color: $brown;
+    }
+}

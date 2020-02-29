@@ -1,0 +1,9 @@
+.wrapper {
+    position: relative;
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    perspective: 1000;
+    overflow: hidden;
+}
