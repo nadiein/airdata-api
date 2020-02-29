@@ -16,6 +16,8 @@ import { AirdataComponent } from './components/airdata/airdata.component';
 import { AirdataService } from './services/airdata.service';
 import { environment } from 'src/environments/environment';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -32,8 +34,8 @@ import { environment } from 'src/environments/environment';
             maxAge: 25, // Retains last 25 states
             logOnly: environment.production, // Restrict extension to log-only mode
         }),
-        AppRoutingModule
-
+        AppRoutingModule,
+        FontAwesomeModule
     ],
     providers: [AirdataService],
     bootstrap: [AppComponent]

@@ -3,7 +3,11 @@
     <div
         class="section-info"
         [class.hovered]="isMouseOver"
-        (mouseover)="onEventDispatcher($event, 3)"
-        (mouseleave)="onEventDispatcher($event, 4)"></div>
+        (dblclick)="onEventDispatcher($event, 5)">
+        <fa-icon
+            *ngIf="isClicked"
+            [icon]="faTimes"
+            (click)="onEventDispatcher($event, 0)"></fa-icon>
+    </div>
     <div class="section-charts"></div>
 </div>
