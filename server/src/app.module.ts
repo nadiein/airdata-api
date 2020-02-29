@@ -1,16 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { Connection } from 'typeorm';
-import { AirDataModule } from './airdata.module';
-// import { ConfigModule } from '../config/config.module';
+import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-    imports: [TypeOrmModule.forRoot(), AirDataModule],
+    imports: [MongooseModule.forRoot('mongodb://localhost:27018/airdata'), MongooseModule.forFeature([{ name: 'Airdata', schema: AirdataSchema }])]],
     controllers: [AppController],
     providers: [AppService],
 })
-export class AppModule {
-    constructor(private readonly connection: Connection) {}
-}
+export class AppModule {}
