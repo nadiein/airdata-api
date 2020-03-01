@@ -19,6 +19,11 @@ export class AirdataComponent implements OnInit {
     isMouseOver:boolean;
     isClicked:boolean;
     faTimes:any = faTimes;
+    inputProps = {
+        id:'search-filter',
+        name:'searchFilter',
+        type:'text'
+    }
 
     constructor(private store: Store<AppState>, private router: Router) {}
 

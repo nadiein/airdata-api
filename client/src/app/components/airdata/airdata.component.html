@@ -5,9 +5,9 @@
         [class.hovered]="isMouseOver"
         (dblclick)="onEventDispatcher($event, 5)">
         <fa-icon
-            *ngIf="isClicked"
             [icon]="faTimes"
             (click)="onEventDispatcher($event, 0)"></fa-icon>
+            <fc-input [props]="inputProps"></fc-input>
     </div>
     <div class="section-charts"></div>
 </div>

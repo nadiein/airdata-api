@@ -1,27 +1,32 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
-import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
-
-import { AirdataEffects } from './effects/airdata.effects';
-import { appReducers } from './reducers/app.reducers';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// NGRX
+import { StoreModule } from '@ngrx/store';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+// Env
+import { environment } from 'src/environments/environment';
+// Effects
+import { AirdataEffects } from './effects/airdata.effects';
+// Reducers
+import { appReducers } from './reducers/app.reducers';
+// Components
 import { AppComponent } from './app.component';
 import { AirdataComponent } from './components/airdata/airdata.component';
+import { InputComponent } from './components/form-controls/input/input.component';
+// Services
 import { AirdataService } from './services/airdata.service';
-import { environment } from 'src/environments/environment';
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AirdataComponent
+        AirdataComponent,
+        InputComponent
     ],
     imports: [
         BrowserModule,

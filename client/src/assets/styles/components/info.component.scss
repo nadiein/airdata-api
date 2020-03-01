@@ -13,5 +13,22 @@
         width: 100%;
         transform: rotateY(0deg);
         transition: transform .37s ease, width .37s .74s ease;
+
+        .ng-fa-icon {
+            opacity: 1;
+            transition: opacity .37s 1.14s ease;
+        }
+    }
+
+    .ng-fa-icon {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        padding: 10px 15px;
+        font-size: 2em;
+        color: $grey;
+        opacity: 0;
+        cursor: pointer;
+        transition: opacity .05s ease;
     }
 }
