@@ -9,7 +9,19 @@ import { Component, OnInit, Input } from '@angular/core';
             [type]="props.type"
             [className]="props.className ? props.classname + ' form-control' : 'form-control'">
     `,
-    styles: [``]
+    styles: [`
+        .form-control {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background: none;
+            font: inherit;
+            color: inherit;
+        }
+        .form-control:focus {
+            outline: none;
+        }
+    `]
 })
 export class InputComponent implements OnInit {
 

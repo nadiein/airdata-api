@@ -1,0 +1,9 @@
+.fc-holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &.fc-holder-lg {
+        width: 100%;
+    }
+}
