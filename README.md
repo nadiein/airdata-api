@@ -1,6 +1,6 @@
 # Air quality app
 
-####  Server side                           - Nest.js
+####  Server side                           - Node.js
 ####  Client                                - angular, typescript
 ####  Tests                                 - jasmine
 ####  CI/CD                                 - git and github workflow actions
